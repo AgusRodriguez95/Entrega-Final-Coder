@@ -2,9 +2,9 @@
   font-size: 20pt; }
 
 .texto_principal {
-  color: #FF7596;
+  color: #ff7596;
   font-size: 200px;
-  font-family: 'Zen Maru Gothic', sans-serif; }
+  font-family: "Zen Maru Gothic", sans-serif; }
 
 .menu {
   position: sticky;
@@ -15,7 +15,7 @@
   background: linear-gradient(90deg, #ff7596 0%, #83c9bb 48%, #00b5ff 99%); }
 
 .icono__footer {
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
 
 .boton__nav {
   background-color: #ff7596;
@@ -29,14 +29,14 @@
     text-align: center; } }
 
 .tipografia__blanca {
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .margen__noticias {
   margin-top: 10px; }
 
 .texto_japones {
   color: #ffffff;
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
   font-size: 20pt; }
 
 .background2 {
@@ -60,8 +60,8 @@ form {
 .field {
   margin: 5px;
   padding: 10px;
-  border-color: #FF7596;
-  outline-color: #FF7596;
+  border-color: #ff7596;
+  outline-color: #ff7596;
   border-style: solid;
   border: radius 50px;
   width: 250px; }
@@ -73,8 +73,8 @@ form {
 
 .field2 {
   margin: 5px;
-  border-color: #FF7596;
-  outline-color: #FF7596;
+  border-color: #ff7596;
+  outline-color: #ff7596;
   border-style: solid;
   border: radius 50px;
   width: 300px;
@@ -83,5 +83,21 @@ form {
 .ilustracion {
   size: 150px; }
 
-.diseno {
-  font-size: 30px; }
+.imagen {
+  margin: 3px;
+  border-radius: 20rem;
+  border: dashed 4px #ff7596; }
+
+p {
+  color: #4d0516;
+  size: 10px;
+  margin-top: 2px; }
+
+ul {
+  list-style: none; }
+  ul li {
+    color: #5f6883; }
+    ul li:hover {
+      color: #ff7596; }
+  ul a {
+    text-decoration: none; }
