@@ -1,10 +1,33 @@
+
+$rosa: #ff7596;
+$degrade: linear-gradient(
+  90deg,
+  rgba(255, 117, 150, 1) 0%,
+  rgba(131, 201, 187, 1) 48%,
+  rgba(0, 181, 255, 1) 99%
+);
+$verde: rgba(131, 201, 187, 1);
+
+$grisoscuro: rgb(17, 17, 17);
+
+/* Condicionales */
+$textos:secundario;
+
+
+.texto__secundario {
+    @if $textos == secundario {
+        color: $rosa
+    } @else {
+        color: black;
+    }
+}
 .texto__secundario {
   font-size: 20pt;
 }
 
 .texto_principal {
-  color: #ff7596;
-  font-size: 200px;
+  color: $rosa;
+  font-size: 170px;
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
@@ -14,37 +37,24 @@
 }
 
 .fondo__footer {
-  background: rgb(255, 117, 150);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 117, 150, 1) 0%,
-    rgba(131, 201, 187, 1) 48%,
-    rgba(0, 181, 255, 1) 99%
-  );
+  background: $degrade;
 }
 
 .icono__footer {
   background-color: #ffffff;
 }
 
-.boton__nav {
-  background-color: rgb(255, 117, 150);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 117, 150, 1) 0%,
-    rgba(131, 201, 187, 1) 48%,
-    rgba(0, 181, 255, 1) 99%
-  );
-}
 @media screen and (max-width: 300px) {
-  .texto_principal {
-    font-size: 60px;
+  p {
+    font-size: 10px;
+   
+  }
   }
   .contedor__imagenes1 {
     font-size: 10px;
     text-align: center;
   }
-}
+
 .tipografia__blanca {
   color: #ffffff;
 }
@@ -59,18 +69,12 @@
   font-size: 20pt;
 }
 
-.background2 {
-  background-color: rgb(255, 117, 150);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 117, 150, 1) 0%,
-    rgba(131, 201, 187, 1) 48%,
-    rgba(0, 181, 255, 1) 99%
-  );
+.background {
+  background: $degrade;
 }
 
 .clima {
-  color: rgba(131, 201, 187, 1);
+  color: $verde;
 }
 
 form {
@@ -115,24 +119,19 @@ form {
   size: 150px;
 }
 
-$Rosa: rgb(255, 117, 150);
-$Rosaoscuro: rgb(77, 5, 22);
 .imagen {
   margin: 3px;
   border-radius: 20rem;
-  border: dashed 4px $Rosa;
+  border: dashed 4px $rosa;
 }
-p {
-  color: $Rosaoscuro;
-  size: 10px;
-  margin-top: 2px;
+
+
+.imagen {
+  margin: 3px;
+  border-radius: 20rem;
+  border: dashed 4px $rosa;
 }
-ul{ list-style: none;
-    li {
-      color: #5f6883; 
-      &:hover {
-        color: #ff7596; }}
-    a{
-        text-decoration: none;}
-       
-        }
+.imagen2 {
+  margin: 3px;
+  border-radius: 20rem;
+  border: dashed 4px #ff7596; }
